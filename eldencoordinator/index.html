@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elden Ring Coordinator</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="data.js"></script>
+    <script type="text/babel" src="script.js"></script>
+    <style type="text/css">
+        body {
+            font-family: 'Helvetica', 'Arial', sans-serif;
+            margin: 0 20px;
+        }
+
+        a {
+            color: #4D4DFF;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: #4D4DFF;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        code, pre {
+            font-family: 'Monospace Font Hack', monospace;
+        }
+
+        #select {
+            width: 400px;
+        }
+
+        button.actionbutton {
+            font-family: inherit !important;
+            background: none !important;
+            border: none;
+            color: #000;
+            cursor: pointer;
+            font-weight: bold;
+            padding: 0 !important;
+        }
+
+        table {
+            border-spacing: 10px;
+            border-collapse: separate;
+        }
+        td {
+            background-color: #F1FAFD;
+            padding: 10px;
+            vertical-align: top;
+        }
+        td.oneline {
+            white-space: nowrap;
+        }
+        ul {
+            margin: 0;
+            padding-left: 1em;
+        }
+        code {
+            padding: 0 0.2em 0 0.2em;
+            user-select: all;
+        }
+    </style>
+</head>
+<body>
+    <h2>Elden Ring Coordinator</h2>
+    <p>
+        This is a simple web utility to open multiple Elden Ring maps at once in DSMapStudio and line them up properly.
+        Use the textbox to search for maps by id or name, then press the Enter key to add it below.
+        Also, click on related map ids to add them too.
+        Designate one map as the origin map and get transform coordinates for others.
+    </p>
+    <p>
+        To transform a map in DSMapStudio, click on it in the list of maps while it is loaded. Then, in the Properties widget, enter
+        the transform XYZ coordinates into the TransformNode "Position" field.
+        Change Gizmos > Origin to "Bounding Box" to more easily manipulate parts in transformed maps.
+    </p>
+    <p>
+        See <a href="http://soulsmodding.wikidot.com/reference:elden-ring-map-list">Elden Ring Map List</a> for a full list of
+        maps and an image of overworld map positions. This page and all of the data were created/collected by thefifthmatt.
+    </p>
+    <div id="root"></div>
+</body>
+</html>
