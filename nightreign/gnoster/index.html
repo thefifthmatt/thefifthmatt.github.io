@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="../favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse all map seeds and placements in Elden Ring Nightreign" />
+    <title>Gnoster - Nightreign Map Patterns</title>
+    <link href="../site.css" rel="stylesheet">
+    <script src="../site.js"></script>
+</head>
+<body>
+    <div id="root">
+        <h1 class="center"><a href=".." class="plain">Gnoster Map Patterns</a></h1>
+        <div id="warning" style="display: none;">
+            <h2 class="center">SPOILER WARNING</h2>
+            <p>
+                <u>Read this first</u>: This is a repository of Nightreign map patterns, meant as a <strong>resource for speedrunners and challenge runners</strong>.
+                The information here can be learned just by playing the game a lot, and I would recommend avoiding it for casual playthroughs.
+            </p>
+            <p>
+                <strong>DO NOT use this repository to spoil other people's runs or else you will be rendered into an amorphous mass.</strong>
+            </p>
+            <div class="center" id="okay">
+                <button id="ack">I understand</button>
+            </div>
+        </div>
+        <noscript>Please enable JavaScript to view this website.</noscript>
+        <!-- Obviously a warning can't be binding in a public static website. Just don't be a dick, okay. -->
+        <div id="info" style="height: 1px; overflow-y: hidden;">
+            <script>syn();</script>
+            <p role="radiogroup" class="bosssort">
+                <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
+                <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
+            </p>
+            <div id="idgrid" style="display: none;">
+                <a href="080.html" class="thumb"><img src="../thumbnail/080.jpg" style="grid-row: 1; grid-column: 1;" /><div class="id">080</div></a>
+                <a href="081.html" class="thumb"><img src="../thumbnail/081.jpg" style="grid-row: 1; grid-column: 2;" /><div class="id">081</div></a>
+                <a href="082.html" class="thumb"><img src="../thumbnail/082.jpg" style="grid-row: 1; grid-column: 3;" /><div class="id">082</div></a>
+                <a href="083.html" class="thumb"><img src="../thumbnail/083.jpg" style="grid-row: 1; grid-column: 4;" /><div class="id">083</div></a>
+                <a href="084.html" class="thumb"><img src="../thumbnail/084.jpg" style="grid-row: 1; grid-column: 5;" /><div class="id">084</div></a>
+                <a href="085.html" class="thumb"><img src="../thumbnail/085.jpg" style="grid-row: 2; grid-column: 1;" /><div class="id">085</div></a>
+                <a href="086.html" class="thumb"><img src="../thumbnail/086.jpg" style="grid-row: 2; grid-column: 2;" /><div class="id">086</div></a>
+                <a href="087.html" class="thumb"><img src="../thumbnail/087.jpg" style="grid-row: 2; grid-column: 3;" /><div class="id">087</div></a>
+                <a href="088.html" class="thumb"><img src="../thumbnail/088.jpg" style="grid-row: 2; grid-column: 4;" /><div class="id">088</div></a>
+                <a href="089.html" class="thumb"><img src="../thumbnail/089.jpg" style="grid-row: 2; grid-column: 5;" /><div class="id">089</div></a>
+                <a href="090.html" class="thumb"><img src="../thumbnail/090.jpg" style="grid-row: 3; grid-column: 1;" /><div class="id">090</div></a>
+                <a href="091.html" class="thumb"><img src="../thumbnail/091.jpg" style="grid-row: 3; grid-column: 2;" /><div class="id">091</div></a>
+                <a href="092.html" class="thumb"><img src="../thumbnail/092.jpg" style="grid-row: 3; grid-column: 3;" /><div class="id">092</div></a>
+                <a href="093.html" class="thumb"><img src="../thumbnail/093.jpg" style="grid-row: 3; grid-column: 4;" /><div class="id">093</div></a>
+                <a href="094.html" class="thumb"><img src="../thumbnail/094.jpg" style="grid-row: 3; grid-column: 5;" /><div class="id">094</div></a>
+                <a href="095.html" class="thumb"><img src="../thumbnail/095.jpg" style="grid-row: 4; grid-column: 1;" /><div class="id">095</div></a>
+                <a href="096.html" class="thumb"><img src="../thumbnail/096.jpg" style="grid-row: 4; grid-column: 2;" /><div class="id">096</div></a>
+                <a href="097.html" class="thumb"><img src="../thumbnail/097.jpg" style="grid-row: 4; grid-column: 3;" /><div class="id">097</div></a>
+                <a href="098.html" class="thumb"><img src="../thumbnail/098.jpg" style="grid-row: 4; grid-column: 4;" /><div class="id">098</div></a>
+                <a href="099.html" class="thumb"><img src="../thumbnail/099.jpg" style="grid-row: 4; grid-column: 5;" /><div class="id">099</div></a>
+                <a href="100.html" class="thumb"><img src="../thumbnail/100.jpg" style="grid-row: 5; grid-column: 1;" /><div class="id">100</div></a>
+                <a href="101.html" class="thumb"><img src="../thumbnail/101.jpg" style="grid-row: 5; grid-column: 2;" /><div class="id">101</div></a>
+                <a href="102.html" class="thumb"><img src="../thumbnail/102.jpg" style="grid-row: 5; grid-column: 3;" /><div class="id">102</div></a>
+                <a href="103.html" class="thumb"><img src="../thumbnail/103.jpg" style="grid-row: 5; grid-column: 4;" /><div class="id">103</div></a>
+                <a href="104.html" class="thumb"><img src="../thumbnail/104.jpg" style="grid-row: 5; grid-column: 5;" /><div class="id">104</div></a>
+                <a href="105.html" class="thumb"><img src="../thumbnail/105.jpg" style="grid-row: 6; grid-column: 1;" /><div class="id">105</div></a>
+                <a href="106.html" class="thumb"><img src="../thumbnail/106.jpg" style="grid-row: 6; grid-column: 2;" /><div class="id">106</div></a>
+                <a href="107.html" class="thumb"><img src="../thumbnail/107.jpg" style="grid-row: 6; grid-column: 3;" /><div class="id">107</div></a>
+                <a href="108.html" class="thumb"><img src="../thumbnail/108.jpg" style="grid-row: 6; grid-column: 4;" /><div class="id">108</div></a>
+                <a href="109.html" class="thumb"><img src="../thumbnail/109.jpg" style="grid-row: 6; grid-column: 5;" /><div class="id">109</div></a>
+                <a href="110.html" class="thumb"><img src="../thumbnail/110.jpg" style="grid-row: 7; grid-column: 1;" /><div class="id">110</div></a>
+                <a href="111.html" class="thumb"><img src="../thumbnail/111.jpg" style="grid-row: 7; grid-column: 2;" /><div class="id">111</div></a>
+                <a href="112.html" class="thumb"><img src="../thumbnail/112.jpg" style="grid-row: 7; grid-column: 3;" /><div class="id">112</div></a>
+                <a href="113.html" class="thumb"><img src="../thumbnail/113.jpg" style="grid-row: 7; grid-column: 4;" /><div class="id">113</div></a>
+                <a href="114.html" class="thumb"><img src="../thumbnail/114.jpg" style="grid-row: 7; grid-column: 5;" /><div class="id">114</div></a>
+                <a href="115.html" class="thumb"><img src="../thumbnail/115.jpg" style="grid-row: 8; grid-column: 1;" /><div class="id">115</div></a>
+                <a href="116.html" class="thumb"><img src="../thumbnail/116.jpg" style="grid-row: 8; grid-column: 2;" /><div class="id">116</div></a>
+                <a href="117.html" class="thumb"><img src="../thumbnail/117.jpg" style="grid-row: 8; grid-column: 3;" /><div class="id">117</div></a>
+                <a href="118.html" class="thumb"><img src="../thumbnail/118.jpg" style="grid-row: 8; grid-column: 4;" /><div class="id">118</div></a>
+                <a href="119.html" class="thumb"><img src="../thumbnail/119.jpg" style="grid-row: 8; grid-column: 5;" /><div class="id">119</div></a>
+            </div>
+            <div id="spawngrid" style="display: none;">
+                <fieldset class="spawnset">
+                    <legend>Far Southwest</legend>
+                    <a href="096.html" class="thumb"><img src="../thumbnail/096.jpg" /><div class="id">096</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Stormhill South of Gate</legend>
+                    <a href="090.html" class="thumb"><img src="../thumbnail/090.jpg" /><div class="id">090</div></a>
+                    <a href="098.html" class="thumb"><img src="../thumbnail/098.jpg" /><div class="id">098</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Above Stormhill Tunnel Entrance</legend>
+                    <a href="083.html" class="thumb"><img src="../thumbnail/083.jpg" /><div class="id">083</div></a>
+                    <a href="099.html" class="thumb"><img src="../thumbnail/099.jpg" /><div class="id">099</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>West of Warmaster's Shack</legend>
+                    <a href="081.html" class="thumb"><img src="../thumbnail/081.jpg" /><div class="id">081</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Southeast of Lake</legend>
+                    <a href="088.html" class="thumb"><img src="../thumbnail/088.jpg" /><div class="id">088</div></a>
+                    <a href="089.html" class="thumb"><img src="../thumbnail/089.jpg" /><div class="id">089</div></a>
+                    <a href="091.html" class="thumb"><img src="../thumbnail/091.jpg" /><div class="id">091</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>East of Cavalry Bridge</legend>
+                    <a href="080.html" class="thumb"><img src="../thumbnail/080.jpg" /><div class="id">080</div></a>
+                    <a href="086.html" class="thumb"><img src="../thumbnail/086.jpg" /><div class="id">086</div></a>
+                    <a href="087.html" class="thumb"><img src="../thumbnail/087.jpg" /><div class="id">087</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Minor Erdtree</legend>
+                    <a href="084.html" class="thumb"><img src="../thumbnail/084.jpg" /><div class="id">084</div></a>
+                    <a href="085.html" class="thumb"><img src="../thumbnail/085.jpg" /><div class="id">085</div></a>
+                    <a href="094.html" class="thumb"><img src="../thumbnail/094.jpg" /><div class="id">094</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Below Summonwater Hawk</legend>
+                    <a href="092.html" class="thumb"><img src="../thumbnail/092.jpg" /><div class="id">092</div></a>
+                    <a href="093.html" class="thumb"><img src="../thumbnail/093.jpg" /><div class="id">093</div></a>
+                    <a href="095.html" class="thumb"><img src="../thumbnail/095.jpg" /><div class="id">095</div></a>
+                    <a href="097.html" class="thumb"><img src="../thumbnail/097.jpg" /><div class="id">097</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Northeast of Saintsbridge</legend>
+                    <a href="082.html" class="thumb"><img src="../thumbnail/082.jpg" /><div class="id">082</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>East of Cavalry Bridge (Mountaintop)</legend>
+                    <a href="104.html" class="thumb"><img src="../thumbnail/104.jpg" /><div class="id">104</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Minor Erdtree (Mountaintop)</legend>
+                    <a href="100.html" class="thumb"><img src="../thumbnail/100.jpg" /><div class="id">100</div></a>
+                    <a href="101.html" class="thumb"><img src="../thumbnail/101.jpg" /><div class="id">101</div></a>
+                    <a href="103.html" class="thumb"><img src="../thumbnail/103.jpg" /><div class="id">103</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Below Summonwater Hawk (Mountaintop)</legend>
+                    <a href="102.html" class="thumb"><img src="../thumbnail/102.jpg" /><div class="id">102</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Stormhill South of Gate (Crater)</legend>
+                    <a href="109.html" class="thumb"><img src="../thumbnail/109.jpg" /><div class="id">109</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>West of Warmaster's Shack (Crater)</legend>
+                    <a href="107.html" class="thumb"><img src="../thumbnail/107.jpg" /><div class="id">107</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Minor Erdtree (Crater)</legend>
+                    <a href="106.html" class="thumb"><img src="../thumbnail/106.jpg" /><div class="id">106</div></a>
+                    <a href="108.html" class="thumb"><img src="../thumbnail/108.jpg" /><div class="id">108</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Below Summonwater Hawk (Crater)</legend>
+                    <a href="105.html" class="thumb"><img src="../thumbnail/105.jpg" /><div class="id">105</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Far Southwest (Rotted Woods)</legend>
+                    <a href="110.html" class="thumb"><img src="../thumbnail/110.jpg" /><div class="id">110</div></a>
+                    <a href="111.html" class="thumb"><img src="../thumbnail/111.jpg" /><div class="id">111</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>West of Warmaster's Shack (Rotted Woods)</legend>
+                    <a href="114.html" class="thumb"><img src="../thumbnail/114.jpg" /><div class="id">114</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Northeast of Saintsbridge (Rotted Woods)</legend>
+                    <a href="112.html" class="thumb"><img src="../thumbnail/112.jpg" /><div class="id">112</div></a>
+                    <a href="113.html" class="thumb"><img src="../thumbnail/113.jpg" /><div class="id">113</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>West of Warmaster's Shack (Noklateo)</legend>
+                    <a href="118.html" class="thumb"><img src="../thumbnail/118.jpg" /><div class="id">118</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Southeast of Lake (Noklateo)</legend>
+                    <a href="119.html" class="thumb"><img src="../thumbnail/119.jpg" /><div class="id">119</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>East of Cavalry Bridge (Noklateo)</legend>
+                    <a href="117.html" class="thumb"><img src="../thumbnail/117.jpg" /><div class="id">117</div></a>
+                </fieldset>
+                <fieldset class="spawnset">
+                    <legend>Below Summonwater Hawk (Noklateo)</legend>
+                    <a href="115.html" class="thumb"><img src="../thumbnail/115.jpg" /><div class="id">115</div></a>
+                    <a href="116.html" class="thumb"><img src="../thumbnail/116.jpg" /><div class="id">116</div></a>
+                </fieldset>
+            </div>
+            <script>selectSort();</script>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Browse all map seeds and placements in Elden Ring Nightreign" />
+    <title>Nightreign Map Patterns</title>
+    <link href="site.css" rel="stylesheet">
+    <script src="site.js"></script>
+</head>
+<body>
+    <div id="root" class="column">
+        <h1 class="center"><a href="." class="plain">Nightreign Map Patterns</a></h1>
+        <p class="center footnote">Last updated for Elden Ring Nightreign app ver 1.01.3</p>
+        <div id="warning" style="display: none;">
+            <h2 class="center">SPOILER WARNING</h2>
+            <p>
+                <u>Read this first</u>: This is a repository of Nightreign map patterns, meant as a <strong>resource for speedrunners and challenge runners</strong>.
+                The information here can be learned just by playing the game a lot, and I would recommend avoiding it for casual playthroughs.
+            </p>
+            <p>
+                <strong>DO NOT use this repository to spoil other people's runs or else you will be rendered into an amorphous mass.</strong>
+            </p>
+            <div class="center" id="okay">
+                <button id="ack">I understand</button>
+            </div>
+        </div>
+        <noscript>Please enable JavaScript to view this website.</noscript>
+        <!-- Obviously a warning can't be binding in a public static website. Just don't be a dick, okay. -->
+        <div id="info" style="height: 1px; overflow-y: hidden;" class="main">
+            <script>syn();</script>
+            <h2>Map patterns by Nightlord</h2>
+            <p>Each Nightlord has 40 map patterns: 20 without any Shifting Earth, plus 5 per Shifting Earth.</p>
+            <ul>
+                <li><a href="gladius/">Gladius</a></li>
+                <li><a href="adel/">Adel</a></li>
+                <li><a href="gnoster/">Gnoster</a></li>
+                <li><a href="maris/">Maris</a></li>
+                <li><a href="libra/">Libra</a></li>
+                <li><a href="fulghor/">Fulghor</a></li>
+                <li><a href="caligo/">Caligo</a></li>
+                <li><a href="heolstor/">Heolstor</a></li>
+            </ul>
+            <h2>Spreadsheet</h2>
+            <p><a href="https://docs.google.com/spreadsheets/d/1qZX3MfipvtPbKwPjElyx9Rler4RXLd9CPrOv7c2XOWI/edit?gid=3239137#gid=3239137" target="_blank">Elden Ring Nightreign map patterns<svg width="1em" height="1em" viewBox="0 0 24 24" style="cursor:pointer"><g stroke-width="2.1" stroke="#666" fill="none" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 13.5 17 19.5 5 19.5 5 7.5 11 7.5"></polyline><path d="M14,4.5 L20,4.5 L20,10.5 M20,4.5 L11,13.5"></path></g></svg></a> contains a dump of all map patterns. I named the map locations mostly based on corresponding Limgrave landmarks.</p>
+            <h2>Special Events</h2>
+            <p>At most one special event may occur per expedition. They are determined by the map pattern, and each appear with the corresponding Nightlords only:</p>
+            <ul>
+                <li><span class="nightevent">Morgott Invasion</span>: Adel, Gnoster, Heolstor</li>
+                <li><span class="nightevent">Maris Bubbles</span>: Gnoster, Caligo, Heolstor</li>
+                <li><span class="nightevent">Gnoster Plague</span>: Maris, Libra, Heolstor</li>
+                <li><span class="nightevent">Libra Curse</span>: Fulghor, Caligo, Heolstor</li>
+                <li>Frenzy Tower: Gnoster, Libra</li>
+                <li>Extra Night Boss: Adel, Fulghor</li>
+                <li>Night Horde: Gladius, Maris, Fulghor</li>
+                <li>Meteor Strike: Gladius, Adel, Caligo</li>
+                <li>Walking Mausoleum: Maris, Caligo</li>
+                <li>Difficult Sorcerer's Rise: Gnoster, Libra</li>
+            </ul>
+            <p>Aside from Walking Mausoleums and difficult Sorcerer's Rises, which are in the map from the start, events are configured to occur on either Day 1 or Day 2. The game waits a random amount of time from the start of the day to trigger the event. Event-specific conditions like player positions must also be satisfied.</p>
+            <ul>
+                <li>Day 1 events happen randomly 6-8 minutes in.</li>
+                <li>When Shifting Earth is active, Day 2 Night Boss events (<span class="nightevent">italicized above</span>) happen randomly 2-3 minutes in.</li>
+                <li>Otherwise, Day 2 events happen randomly 2-8 minutes in.</li>
+            </ul>
+            <h2>FAQ</h2>
+            <h3>Why are there so few map patterns?</h3>
+            <p>Not sure, but it makes some sense to give newcomers a foothold to learn the map and its bosses if they get stuck attempting any particular Nightlord. It may have been necessary for QA. Still, the lack of pattern variety becomes evident the more you play, especially with speedruns and other challenge runs. Ideally the game should have had >5k patterns, even with limited night bosses per Nightlord. Nightreign's map pattern system has strong fundamentals which future patches hopefully build on.</p>
+            <h3>What <em>is</em> randomized?</h3>
+            <p>A 32-bit random value we can call the expedition seed determines the map pattern (including shifting earth) and the active remembrance when multiple options are available. It is generated only after matchmaking and selecting a target Nightlord.</p>
+            <p>While second circle locations are set by the pattern, the first circle location is random based on the expedition seed. The first circle's perimeter is placed at a random angle and eligible distance away from the second circle, such that it contains the second circle. The spawn point approach direction is also based on the expedition seed, as is the presence of cataclysms.</p>
+            <p>Random item and buff drops are not seeded in advance. Likewise, various in-game interactions such as special events may occur at per-run random times or locations.</p>
+            <h3>Can I play other map patterns with mods?</h3>
+            <p>Yes. However, unlike the certified and released game, bugs are more likely. I'm working on a randomizer which can produce new map patterns with random combinations of camps and bosses, with additional randomization planned, and will link it here when I'm done. Make sure to use an alternate save file for <em>all</em> mods.</p>
+            <h3>Can I force a certain map pattern?</h3>
+            <p>Yes, this will be an optional part of the randomizer mod. You must use an alternate save file for this as well.</p>
+            <h3>How did you make this?</h3>
+            <p>Using Magick.NET and well over 150 hours of investigation, documentation, and coding.</p>
+            <h3>Where can I make suggestions or get further info?</h3>
+            <p>Contact thefifthmatt on Discord, preferably in the <a href="https://discord.gg/mT2JJjx" target="_blank">?ServerName? Modding Discord</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

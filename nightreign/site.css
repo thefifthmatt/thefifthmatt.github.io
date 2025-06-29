@@ -1,0 +1,120 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(1100px 600px at 50% 300px, #22005a 350px, #13042b 100%, #050309 200%) fixed;
+}
+
+#root {
+  margin: 20px auto 20px auto;
+  padding: 0.05px 20px 20px 20px;
+  background-color: #e9e5f2;
+}
+#root.column {
+  max-width: 1100px;
+}
+#root.column.zoomimage {
+  max-width: 1546px;
+}
+
+#warning {
+  max-width: 800px;
+  margin: auto;
+}
+
+#ack {
+  cursor: pointer;
+  padding: 4px 6px;
+  font-size: 20px;
+}
+
+.center {
+  margin: 0.5em 0 0.2em 0;
+  text-align: center;
+}
+.bosssort {
+  margin: 0.5em 0 0.5em 0;
+  text-align: center;
+}
+.nav {
+  margin: 0 0 0.2em 0;
+  text-align: center;
+}
+
+.nav > .none {
+  color: dimgray;
+}
+
+.nightevent {
+  color: darkred;
+  font-style: italic;
+}
+
+.footnote {
+  color: dimgray;
+  font-size: 14px;
+}
+
+p {
+  margin: 0.5em 0;
+}
+
+a.plain:link, a.plain:visited, a.plain:hover, a.plain:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+#idgrid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 7px;
+  margin-bottom: 15px;
+}
+
+#idgrid .thumb img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.thumb div.id {
+  text-align: center;
+  vertical-align: bottom;
+}
+
+#spawngrid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#spawngrid .thumb img {
+  width: 100%;
+  max-width: 22vw;
+  vertical-align: middle;
+}
+
+.spawnset {
+  display: flex;
+  column-gap: 7px;
+  max-width: 100%;
+}
+
+.viewer {
+  height: 100%;
+  display: grid;
+}
+
+#root:not(.zoomimage) #zoom {
+  max-width: 100%;
+  max-height: calc(100vh - 170px);
+  margin: auto;
+  cursor: zoom-in;
+}
+
+#root.zoomimage #zoom {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  cursor: zoom-out;
+}
