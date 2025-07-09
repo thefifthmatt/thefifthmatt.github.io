@@ -61,7 +61,7 @@
                 <li>Walking Mausoleum: Maris, Caligo</li>
                 <li>Difficult Sorcerer's Rise: Gnoster, Libra</li>
             </ul>
-            <p>Aside from Walking Mausoleums and difficult Sorcerer's Rises, which are in the map from the start, events are configured to occur on either Day 1 or Day 2. The game waits a random amount of time from the start of the day to trigger the event. Event-specific conditions like player positions must also be satisfied.</p>
+            <p>Frenzy Towers, Walking Mausoleums, and difficult Sorcerer's Rises are in the map from the start. All other events are configured to occur on either Day 1 or Day 2. The game waits a random amount of time from the start of the day to trigger the event. Event-specific conditions like player positions must also be satisfied.</p>
             <ul>
                 <li>Day 1 events happen randomly 6-8 minutes in.</li>
                 <li>When Shifting Earth is active, Day 2 Night Boss events (<span class="nightevent">italicized above</span>) happen randomly 2-3 minutes in.</li>
@@ -72,7 +72,7 @@
             <p>Not sure, but it makes some sense to give newcomers a foothold to learn the map and its bosses if they get stuck attempting any particular Nightlord. It may have been necessary for QA. Still, the lack of pattern variety becomes evident the more you play, especially with speedruns and other challenge runs. Ideally the game should have had >5k patterns, even with limited night bosses per Nightlord. Nightreign's map pattern system has strong fundamentals which future patches hopefully build on.</p>
             <h3>What <em>is</em> randomized?</h3>
             <p>A 32-bit random value we can call the expedition seed determines the map pattern (including shifting earth) and the active remembrance when multiple options are available. It is generated only after matchmaking and selecting a target Nightlord.</p>
-            <p>While second circle locations are set by the pattern, the first circle location is random based on the expedition seed. The first circle's perimeter is placed at a random angle and eligible distance away from the second circle, such that it contains the second circle. The spawn point approach direction is also based on the expedition seed, as is the presence of cataclysms.</p>
+            <p>While second circle locations are set by the pattern, the first circle location is random based on the expedition seed. The first circle's perimeter is placed at a random angle and eligible distance away from the second circle, such that it contains the second circle. The expedition seed also determines the spawn point approach direction, scarab locations, merchant shops, and the presence of cataclysms (camps with Night Invaders).</p>
             <p>Random item and buff drops are not seeded in advance. Likewise, various in-game interactions such as special events may occur at per-run random times or locations.</p>
             <h3>Can I play other map patterns with mods?</h3>
             <p>Yes. However, unlike the certified and released game, bugs are more likely. I'm working on a randomizer which can produce new map patterns with random combinations of camps and bosses, with additional randomization planned, and will link it here when I'm done. Make sure to use an alternate save file for <em>all</em> mods.</p>
