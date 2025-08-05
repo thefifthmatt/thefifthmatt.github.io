@@ -47,9 +47,20 @@
                     </select>
                 </div>
                 <div role="radiogroup" class="filter-group">
-                <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
-                <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
-            </p>
+                    <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
+                    <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
+                </div>
+                <div class="filter-group earth-filter">
+                    <label for="earthFilter">Shifting Earth:</label>
+                    <select id="earthFilter">
+                        <option value="none">None</option>
+                        <option value="rotted-woods">Rotted Woods (Forest)</option>
+                        <option value="crater">Crater</option>
+                        <option value="mountaintop">Mountaintop</option>
+                        <option value="noklateo">Noklateo (City)</option>
+                    </select>
+                </div>
+            </div>
             <div id="idgrid" style="display: none;">
                 <a href="120.html" class="thumb"><img src="../thumbnail/120.jpg" style="grid-row: 1; grid-column: 1;" /><div class="id">120</div></a>
                 <a href="121.html" class="thumb"><img src="../thumbnail/121.jpg" style="grid-row: 1; grid-column: 2;" /><div class="id">121</div></a>
