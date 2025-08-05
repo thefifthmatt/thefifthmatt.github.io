@@ -31,6 +31,13 @@ function updateSort() {
 function selectSort() {
     document.getElementById('sortid').addEventListener('change', updateSort);
     document.getElementById('sortspawn').addEventListener('change', updateSort);
+    const nightlordFilter = document.getElementById('nightlordFilter');
+    if (nightlordFilter) {
+        nightlordFilter.addEventListener('change', function() {
+            const selectedNightlord = this.value;
+            window.location.href = `../${selectedNightlord}/`;
+        });
+    }
     const pref = localStorage.getItem('nightreign.sort');
     if (pref === 'id') {
         document.getElementById('sortid').checked = true;

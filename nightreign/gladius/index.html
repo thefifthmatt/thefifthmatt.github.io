@@ -32,7 +32,21 @@
         <!-- Obviously a warning can't be binding in a public static website. Just don't be a dick, okay. -->
         <div id="info" style="height: 1px; overflow-y: hidden;">
             <script>syn();</script>
-            <p role="radiogroup" class="bosssort">
+            <div class="bosssort filter-controls">
+                <div class="filter-group">
+                    <label for="nightlordFilter">Night Lord:</label>
+                    <select id="nightlordFilter">
+                        <option value="gladius" selected>Gladius, Beast of Night</option>
+                        <option value="adel">Adel, Baron of Night</option>
+                        <option value="gnoster">Gnoster, Wisdom of Night</option>
+                        <option value="maris">Maris, Fathom of Night</option>
+                        <option value="libra">Libra, Creature of Night</option>
+                        <option value="fulghor">Fulghor, Champion of Nightglow</option>
+                        <option value="caligo">Caligo, Miasma of Night</option>
+                        <option value="heolstor">Heolstor the Nightlord</option>
+                    </select>
+                </div>
+                <div role="radiogroup" class="filter-group">
                 <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
                 <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
             </p>
