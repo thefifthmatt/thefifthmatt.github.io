@@ -8,13 +8,13 @@
     <link rel="icon" href="../favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Browse all map seeds and placements in Elden Ring Nightreign" />
-    <title>Fulghor - Nightreign Map Patterns</title>
+    <title>Darkdrift Knight (Fulghor, Champion of Nightglow) - Nightreign Map Patterns</title>
     <link href="../site.css" rel="stylesheet">
     <script src="../site.js"></script>
 </head>
 <body>
     <div id="root">
-        <h1 class="center"><a href=".." class="plain">Fulghor Map Patterns</a></h1>
+        <h1 class="center"><a href=".." class="plain">Darkdrift Knight (Fulghor, Champion of Nightglow): Map Patterns</a></h1>
         <div id="warning" style="display: none;">
             <h2 class="center">SPOILER WARNING</h2>
             <p>
@@ -32,10 +32,35 @@
         <!-- Obviously a warning can't be binding in a public static website. Just don't be a dick, okay. -->
         <div id="info" style="height: 1px; overflow-y: hidden;">
             <script>syn();</script>
-            <p role="radiogroup" class="bosssort">
-                <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
-                <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
-            </p>
+            <div class="bosssort filter-controls">
+                <div class="filter-group">
+                    <label for="nightlordFilter">Night Lord:</label>
+                    <select id="nightlordFilter">
+                        <option value="gladius">Tricephalos (Gladius, Beast of Night)</option>
+                        <option value="adel">Gaping Jaw (Adel, Baron of Night)</option>
+                        <option value="gnoster">Sentient Pest (Gnoster, Wisdom of Night)</option>
+                        <option value="maris">Augur (Maris, Fathom of Night)</option>
+                        <option value="libra">Equilibrious Beast (Libra, Creature of Night)</option>
+                        <option value="fulghor" selected>Darkdrift Knight (Fulghor, Champion of Nightglow)</option>
+                        <option value="caligo">Fissure in the Fog (Caligo, Miasma of Night)</option>
+                        <option value="heolstor">Night Aspect (Heolstor, the Nightlord)</option>
+                    </select>
+                </div>
+                <div role="radiogroup" class="filter-group">
+                    <input type="radio" name="sort" id="sortid" checked> <label for="sortid">Sort by pattern ID</label>
+                    <input type="radio" name="sort" id="sortspawn"> <label for="sortspawn">Sort by spawn point</label>
+                </div>
+                <div class="filter-group earth-filter">
+                    <label for="earthFilter">Shifting Earth:</label>
+                    <select id="earthFilter">
+                        <option value="none">None</option>
+                        <option value="rotted-woods">Rotted Woods (Forest)</option>
+                        <option value="crater">Crater</option>
+                        <option value="mountaintop">Mountaintop</option>
+                        <option value="noklateo">Noklateo (City)</option>
+                    </select>
+                </div>
+            </div>
             <div id="idgrid" style="display: none;">
                 <a href="200.html" class="thumb"><img src="../thumbnail/200.jpg" style="grid-row: 1; grid-column: 1;" /><div class="id">200</div></a>
                 <a href="201.html" class="thumb"><img src="../thumbnail/201.jpg" style="grid-row: 1; grid-column: 2;" /><div class="id">201</div></a>

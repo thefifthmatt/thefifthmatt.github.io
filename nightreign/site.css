@@ -38,6 +38,25 @@ body {
   margin: 0.5em 0 0.5em 0;
   text-align: center;
 }
+.filter-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.filter-group.earth-filter {
+  display: none;
+}
+#earthFilter, #nightlordFilter {
+  padding: 2px 4px;
+  font-size: 16px;
+}
 .nav {
   margin: 0 0 0.2em 0;
   text-align: center;
